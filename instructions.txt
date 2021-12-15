@@ -1,0 +1,17 @@
+Your activity will be to recreate `page.jpg` using best practices and coding standards. Once it's done, publish it on github and send us the link to the repo.
+
+- Bonus points for considering UX.
+
+Front-end
+- Use your Javascript library/framework of choice (Vue/React/jQuery/etc...)
+- Make sure it's responsive;
+- Leaderboard table must be fetched from `leaderboard.json`;
+- User's team "House Stark" is highlighted on the leaderboard;
+- It must follow accessibility best practices;
+
+Back-end
+- Use your PHP framework of choice (Laravel/CakePHP/etc...);
+- Users should not be allowed to enter value above 50,000;
+- Once submitted, value should be saved to a database (there's no need to create a database table, just show how you would save it, and consider security of storing user supplied input in the database);
+
+You only need to create the example page that there is a picture of.  There is no need to create a registration or login process or any other forms or pages.

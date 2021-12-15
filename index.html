@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Shift</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+	<div class="row">
+		<div class="col-4">
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-3">
+						<img id="focus_img" class="profile" src="assets/house-stark.jpg">
+					</div>
+					<div class="col-9">
+						<h4 id="focus_name">House Stark</h4>
+						<h3>Challenge Points</h3>
+						<h2 id="focus_points">28,846</h2>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-6">
+						<div class="row">
+							<div class="col-4 pt-3">
+								<div class="profile">
+									<img class="icon-display" src="assets/trophy.svg">
+								</div>
+							</div>
+							<div class="col-8">
+								<h4>OVERALL</h4>
+								<h3>RANKINGS</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<table class="table table-striped" id="table">
+				</table>
+			</div>
+			<div class="jumbotron">
+				<div class="row">
+					<img id="description-img" src="assets/question.svg" class="center">
+					<h3>ABOUT</h3>
+				</div>
+				<p>
+					Closes on <b>Wednesday, 23 Dec. 2021, 5:00AM</b>
+				</p>
+				<p>
+					'SHIFT' was designed to show you how a seemingly small change, like adding more steps
+					into your dat with your team, can have a huge impact on you and those with whom you participated.
+				</p>
+			</div>
+		</div>
+		<div class="col-7">
+			<div class="card">
+				<div class="card-body">
+					<h4>SHIFT CHALLENGE</h4>
+				</div>
+				<img src="assets/activity-header.jpg" id="cover">
+				<div class="card-body">
+					<h4>Saturday, Dec. 05</h4>
+					<h3>TRACK YOUR STEPS</h3>
+					<br>
+					Using your movement-tracking device, keep track of the number of steps you take each day.
+					<br><br>
+					<b>Enter your step count for this day.</b>
+					<br>
+					Enter your answer
+					<br>
+					<form action="enter_steps.php" method="post">
+						<div class="input-group mb-3 input-group-lg col-5">
+							<input type="number" class="form-control" name="user_steps" max="50000">
+							<input type="hidden" name="user_id" id="user_id">
+							<input type="hidden" name="user_name" id="user_name">
+							<input type="hidden" name="entry_time" id="entry_time">
+							<div class="input-group-append">
+								<span class="input-group-text">Steps</span>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">SAVE ANSWER</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
